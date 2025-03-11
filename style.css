@@ -1,129 +1,105 @@
 :root {
-  --primary: #0d6efd;
-  --primary-hover: #0b5ed7;
-  --primary-active: #084298;
-  --light-bg: #f0f8ff;
+  --primary: #3B82F6; /* Bright Blue */
+  --secondary: #1E40AF; /* Darker Blue */
+  --accent: #E0F2FE;
+  --text-color: #333;
+  --bg-color: #F9FAFB;
 }
 
 body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+  color: #333;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fff;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
+  padding: 0;
 }
 
 header {
-  background: var(--primary);
+  background-color: var(--primary);
   color: #fff;
-  padding: 10px 0;
+  padding: 15px;
   text-align: center;
-}
-header h1 {
-  margin: 0;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
-.nav-buttons {
+nav {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 10px 0;
-  background: #f5f5f5;
+  gap: 10px;
+  padding: 10px;
+  background: #e0f2fe;
 }
-.nav-buttons button {
-  background: var(--primary);
+
+nav button {
+  background-color: var(--primary);
   color: #fff;
+  padding: 10px 15px;
   border: none;
-  border-radius: 4px;
-  padding: 10px 16px;
-  margin: 5px;
-  font-size: 1em;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
-.nav-buttons button:hover {
-  background: var(--primary-hover);
-}
-.nav-buttons button.active {
-  background: var(--primary-active);
+
+nav button:hover, nav button.active {
+  background-color: var(--primary-active, #2563EB);
 }
 
 .content-area {
   padding: 15px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .subject-section {
   display: none;
 }
-.subject-section h2 {
-  margin-top: 0;
+
+h2 {
   color: var(--primary);
+  margin-bottom: 10px;
 }
 
 .recommendations {
   display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 10px 0;
-}
-.recommendations button {
-  background: var(--primary);
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 12px;
-  cursor: pointer;
-  white-space: normal;
 }
 
-.search-area {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 10px;
-}
-.search-area input {
-  flex: 1;
-  padding: 8px;
-  font-size: 1em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.search-area button {
-  background: var(--primary);
-  color: #fff;
+.rec-btn {
+  background-color: #DBEAFE;
+  color: #1E3A8A;
   border: none;
-  border-radius: 4px;
-  padding: 8px 16px;
-  font-size: 1em;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.rec-btn:hover {
+  background-color: #BFDBFE;
+}
+
+.search-area input {
+  width: calc(100% - 90px);
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+}
+
+.search-area button {
+  background-color: var(--secondary, #1E3A8A);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
 .response {
-  background: var(--light-bg);
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  background-color: #EFF6FF;
   padding: 15px;
-  min-height: 120px;
-  white-space: pre-wrap;
-}
-
-#intro {
-  text-align: center;
-}
-#intro p {
-  font-size: 1.1em;
-}
-
-@media (max-width: 600px) {
-  .nav-buttons {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .nav-buttons button {
-    width: 100%;
-  }
+  border-radius: 8px;
+  min-height: 150px;
 }
