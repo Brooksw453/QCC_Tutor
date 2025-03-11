@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QCC Tutor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>QCC Tutor</h1>
+    </header>
+    <nav class="nav-buttons">
+      <button id="writingTab">Writing</button>
+      <button id="mathTab">Math</button>
+      <button id="scienceTab">Science</button>
+      <button id="engineeringTab">Engineering</button>
+    </nav>
+    <main class="content-area">
+      <div id="intro">
+        <p>Welcome to QCC Tutor! Select a subject above to get started.</p>
+      </div>
+      <div id="writingSection" class="subject-section">
+        <h2>Writing Tutor</h2>
+        <div class="recommendations">
+          <button class="rec-btn" data-subject="writing" data-query="Help me brainstorm topics">Help me brainstorm topics</button>
+          <button class="rec-btn" data-subject="writing" data-query="Help me outline a paper">Help me outline a paper</button>
+          <button class="rec-btn" data-subject="writing" data-query="How do I improve my thesis statement?">Improve my thesis statement</button>
+        </div>
+        <div class="search-area">
+          <input type="text" id="writingQuery" placeholder="Type your writing question..." />
+          <button id="writingSubmit">Ask</button>
+        </div>
+        <div class="response" id="writingResponse"></div>
+      </div>
+      <div id="mathSection" class="subject-section">
+        <h2>Math Tutor</h2>
+        <div class="recommendations">
+          <button class="rec-btn" data-subject="math" data-query="Explain step-by-step how to solve an algebra equation">Algebra help</button>
+          <button class="rec-btn" data-subject="math" data-query="How do I find a derivative in calculus?">Calculus derivative</button>
+          <button class="rec-btn" data-subject="math" data-query="What is the Pythagorean theorem?">Geometry basics</button>
+        </div>
+        <div class="search-area">
+          <input type="text" id="mathQuery" placeholder="Type your math question..." />
+          <button id="mathSubmit">Ask</button>
+        </div>
+        <div class="response" id="mathResponse"></div>
+      </div>
+      <div id="scienceSection" class="subject-section">
+        <h2>Science Tutor</h2>
+        <div class="recommendations">
+          <button class="rec-btn" data-subject="science" data-query="Explain Newton's laws of motion">Newton's Laws</button>
+          <button class="rec-btn" data-subject="science" data-query="What is photosynthesis?">Photosynthesis</button>
+          <button class="rec-btn" data-subject="science" data-query="Describe the water cycle">Water cycle</button>
+        </div>
+        <div class="search-area">
+          <input type="text" id="scienceQuery" placeholder="Type your science question..." />
+          <button id="scienceSubmit">Ask</button>
+        </div>
+        <div class="response" id="scienceResponse"></div>
+      </div>
+      <div id="engineeringSection" class="subject-section">
+        <h2>Engineering Tutor</h2>
+        <div class="recommendations">
+          <button class="rec-btn" data-subject="engineering" data-query="What is Ohm's Law in electrical circuits?">Ohm's Law</button>
+          <button class="rec-btn" data-subject="engineering" data-query="Explain the engineering design process">Design process</button>
+          <button class="rec-btn" data-subject="engineering" data-query="How does a hydraulic system work?">Hydraulics</button>
+        </div>
+        <div class="search-area">
+          <input type="text" id="engineeringQuery" placeholder="Type your engineering question..." />
+          <button id="engineeringSubmit">Ask</button>
+        </div>
+        <div class="response" id="engineeringResponse"></div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
