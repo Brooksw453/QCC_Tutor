@@ -3,7 +3,7 @@
 const subjects = ["writing", "math", "science", "engineering"];
 
 // Note: Insert your OpenAI API key for testing, but never expose it in production.
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "your_key";
 
 // Function to show a given subject section and hide others
 function showSection(subject) {
