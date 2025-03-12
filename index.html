@@ -53,7 +53,20 @@
       <div class="response" id="mathResponse"></div>
     </div>
 
-    <!-- Additional sections for Science and Engineering follow a similar pattern -->
+    <!-- Science -->
+        <div id="scienceSection" class="subject-section">
+      <h2>Math Tutor</h2>
+      <div class="recommendations">
+        <button class="rec-btn" data-subject="science" data-query="Help with chemistry">Chemistry Help</button>
+        <button class="rec-btn" data-subject="science" data-query="Help with physics">Physics Help</button>
+        <button class="rec-btn" data-subject="science" data-query="Help with Astronomy">Astronomy Help</button>
+      </div>
+      <div class="search-area">
+        <input type="text" id="scienceQuery" placeholder="Ask a science question...">
+        <button onclick="sendQuery('science', document.getElementById('scienceQuery').value)">Ask</button>
+      </div>
+      <div class="response" id="scienceResponse"></div>
+    </div>
     <!-- Duplicate Writing/Math sections above and adjust content for Science & Engineering -->
   </div>
 
